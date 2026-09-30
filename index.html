@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="hero">
+    <h1>ARTESANO</h1>
+    <div class="detalhe">
+      <div class="detalhe-linha">
+        <span class="detalhe-text-esquerdo"></span>
+        <span class="sub-text">MATÉRIA | LUZ | ESPAÇO</span>
+        <span class="detalhe-text-direito"></span>
+      </div>
+      <p class="detalhe-texto">ESTÚDIO DE OBJETOS | EDIÇAO DE INVERNO</p>
+      <p class="detalhe-data">-2026-</p>
+    </div>
+  </div>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">INICIO</a></li>
+      <li><a href="#">ESTÚDIO</a></li>
+      <li><a href="#">COLEÇÕES</a></li>
+      <li><a href="#" class="active">A</a></li>
+      <li><a href="#">DEPOIMENTOS</a></li>
+      <li><a href="#">GALERIA</a></li>
+      <li><a href="#">CONTATO</a></li>
+    </ul>
+  </div>
+  <div class="estudio">
+    <h2>Fazemos objetos que duram mais que nós.</h2>
+    <span class="detalhe-texto-estudio"></span>
+    <div class="texto-estudio">
+      <p>Um estúdio pequeno em uma rua sem saída: barro, madeira e vidro</p>
+      <p>trabalhados devagar, em edições curtas. Cada peça sai numerada, assinada e</p>
+      <p>com o nome de quem a fez no verso.</p>
+    </div>
+    <div class="etapas-estudio">
+      <div class="etapa-estudio">
+        <img src="./img/icone-materia.svg" alt="">
+        <span class="detalhe-icone"></span>
+        <p>MATÉRIA</p>
+      </div>
+      <div class="etapa-estudio">
+        <img src="./img/icone-desenho.svg" alt="">
+        <span class="detalhe-icone"></span>
+        <p>DESENHO</p>
+      </div>
+      <div class="etapa-estudio">
+        <img src="./img/icone-forma.svg" alt="">
+        <span class="detalhe-icone"></span>
+        <p>FÔRMA</p>
+      </div>
+      <div class="etapa-estudio">
+        <img src="./img/icone-entrega.svg" alt="">
+        <span class="detalhe-icone"></span>
+        <p>ENTREGA</p>
+      </div>
+    </div>
+  </div>
+  <section class="catalogo" aria-labelledby="titulo-catalogo">
+    <h2 id="titulo-catalogo" class="titulo-catalogo">Quatro coleções, uma por estação</h2>
+
+    <table class="tabela-catalogo">
+      <caption>Edições abertas</caption>
+      <thead>
+        <tr>
+          <th scope="col">Coleção</th>
+          <th scope="col">Peça</th>
+          <th scope="col">Edição</th>
+          <th scope="col">Prazo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Névoa</td>
+          <td>Vaso baixo</td>
+          <td>40 un.</td>
+          <td>3 semanas</td>
+        </tr>
+        <tr>
+          <td>Névoa</td>
+          <td>Prato fundo</td>
+          <td>60 un.</td>
+          <td>3 semanas</td>
+        </tr>
+        <tr>
+          <td>Sal</td>
+          <td>Luminária de mesa</td>
+          <td>25 un.</td>
+          <td>5 semanas</td>
+        </tr>
+        <tr>
+          <td>Sal</td>
+          <td>Espelho oval</td>
+          <td>18 un.</td>
+          <td>6 semanas</td>
+        </tr>
+        <tr>
+          <td>Ferro</td>
+          <td>Banco de canto</td>
+          <td>12 un.</td>
+          <td>8 semanas</td>
+        </tr>
+        <tr>
+          <td>Ferro</td>
+          <td>Cabideiro alto</td>
+          <td>20 un.</td>
+          <td>7 semanas</td>
+        </tr>
+        <tr>
+          <td>Vento</td>
+          <td>Móbile de vidro</td>
+          <td>30 un.</td>
+          <td>4 semanas</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="notas-catalogo">
+      <p>Abrimos as encomendas quatro vezes por ano e fechamos quando a edição acaba. Nada é refeito depois: o molde é quebrado e a coleção seguinte começa do papel em branco.</p>
+      <p>Os prazos acima contam a partir da confirmação. O frete é combinado peça a peça, porque nenhuma delas viaja igual.</p>
+    </div>
+
+    <a class="botao-catalogo" href="#contato">Pedir o catálogo</a>
+  </section>
+  <section class="depoimento">
+    <blockquote>
+      “Comprei uma peça pensando em decorar uma prateleira. Ela virou a coisa que eu pego todos os dias, e é a única da casa que eu saberia descrever de olhos fechados.”
+    </blockquote>
+    <cite>— Marina Álvares, coleção Névoa</cite>
+  </section>
+  <section class="galeria" aria-labelledby="titulo-galeria">
+    <h2 id="titulo-galeria" class="titulo-galeria">Peças recentes</h2>
+    <span class="detalhe-galeria"></span>
+    <div class="galeria-itens">
+      <figure class="peca">
+        <img src="./img/peca-tigela.jpg" alt="Tigela funda de cerâmica branca">
+        <figcaption>
+          <span>Tigela funda</span>
+          <span>Névoa · Grés</span>
+        </figcaption>
+      </figure>
+      <figure class="peca">
+        <img src="./img/peca-assento.jpg" alt="Banco de madeira com três pernas">
+        <figcaption>
+          <span>Assento de três pés</span>
+          <span>Ferro · Madeira</span>
+        </figcaption>
+      </figure>
+      <figure class="peca">
+        <img src="./img/peca-secagem.jpg" alt="Tigelas de cerâmica em prateleiras de secagem">
+        <figcaption>
+          <span>Tigelas em secagem</span>
+          <span>Névoa · Ateliê</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</body>
+</html>

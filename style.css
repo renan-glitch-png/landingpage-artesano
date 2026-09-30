@@ -1,0 +1,371 @@
+/* #hero{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/hero-atelie.jpg);
+}*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+    url("./img/hero-atelie.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  margin: 0 0 1rem;
+  background: transparent;
+}
+
+.detalhe {
+  width: min(90vw, 700px);
+  background: transparent;
+  color: #fff;
+}
+
+.detalhe-linha {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  min-height: 2rem;
+  padding: 0.25rem 1.25rem;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.detalhe-text-esquerdo,
+.detalhe-text-direito {
+  display: block;
+  flex: 0.5;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.sub-text,
+.detalhe p {
+  background: transparent;
+}
+
+.sub-text {
+  white-space: nowrap;
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+}
+
+.detalhe-texto,
+.detalhe-data {
+  font-size: 0.75rem;
+  letter-spacing: 0.24em;
+}
+
+.detalhe-texto {
+  margin-top: 1.4rem;
+}
+
+.detalhe-data {
+  margin-top: 1.25rem;
+}
+
+/* REFERENTE AO NAVBAR */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background: rgba(248, 247, 247, 0.7);
+  justify-content: center;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover {
+  color: #555;
+}
+.navbar ul li a.active {
+  border: solid 2px #555;
+  padding: 1px 4px 1px 4px;
+}
+
+/* Essa parte é referente ao estúdio. */
+.estudio {
+  min-height: 600px;
+  padding: 7.5rem 4rem 8rem;
+  background: #f4f4f5;
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.estudio h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.detalhe-texto-estudio {
+  display: block;
+  width: 3rem;
+  height: 1px;
+  margin: 2rem auto 1.8rem;
+  background: #b9b6b2;
+}
+
+.texto-estudio {
+  max-width: 520px;
+  margin: 0 auto;
+  color: #77727a;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 300;
+  letter-spacing: 0.015em;
+  line-height: 2;
+  text-align: center;
+}
+
+.texto-estudio p {
+  margin: 0;
+}
+
+.etapas-estudio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  max-width: 900px;
+  margin: 6.25rem auto 0;
+}
+
+.etapa-estudio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.etapa-estudio img {
+  width: 34px;
+  height: 34px;
+}
+
+.detalhe-icone {
+  display: block;
+  width: 26px;
+  height: 1px;
+  margin: 1.25rem 0 1.15rem;
+  background: #aaa5a0;
+}
+
+.etapa-estudio p {
+  color: #59525c;
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+}
+
+/* REFERENTE AO CATÁLOGO */
+.catalogo {
+  padding: 5rem 4rem 4rem;
+  background: #1f2123;
+  color: #f4f4f5;
+  text-align: center;
+}
+
+.titulo-catalogo {
+  max-width: 420px;
+  margin: 0 auto 3.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.tabela-catalogo {
+  width: min(100%, 790px);
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.tabela-catalogo caption {
+  margin-bottom: 1rem;
+  color: #d4c9a8;
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.26em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tabela-catalogo th {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #383b3d;
+  color: #d4c9a8;
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.tabela-catalogo td {
+  padding: 0.95rem 0;
+  border-bottom: 1px solid #2d3032;
+  color: #eeeae1;
+  font-size: 0.78rem;
+  font-weight: 300;
+}
+
+.tabela-catalogo th:not(:first-child),
+.tabela-catalogo td:not(:first-child) {
+  padding-left: 2rem;
+}
+
+.notas-catalogo {
+  max-width: 560px;
+  margin: 4rem auto 2.75rem;
+  color: #ddd8cf;
+  font-size: 0.78rem;
+  font-weight: 300;
+  line-height: 1.9;
+}
+
+.notas-catalogo p + p {
+  margin-top: 1.25rem;
+}
+
+.botao-catalogo {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  border: 1px solid #aaa69d;
+  border-radius: 999px;
+  color: #eeeae1;
+  font-size: 0.58rem;
+  letter-spacing: 0.24em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+}
+
+.botao-catalogo:hover {
+  background: #fff;
+  color: #1f2123;
+}
+
+/* REFERENTE AO DEPOIMENTO */
+.depoimento {
+  padding: 2.25rem 1.5rem 2.5rem;
+  background: #f8f8f8;
+  color: #1f2123;
+  text-align: center;
+}
+
+.depoimento blockquote {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.75;
+}
+
+.depoimento cite {
+  display: block;
+  color: #59525c;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.6rem;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+/* REFERENTE À GALERIA */
+.galeria {
+  padding: 5rem 4rem 8rem;
+  background: #f4f4f5;
+  color: #1f2123;
+  text-align: center;
+}
+
+.titulo-galeria {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.detalhe-galeria {
+  display: block;
+  width: 3rem;
+  height: 1px;
+  margin: 2rem auto 3.5rem;
+  background: #b9b6b2;
+}
+
+.galeria-itens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: min(100%, 1080px);
+  margin: 0 auto;
+}
+
+.peca {
+  margin: 0;
+  background: #fff;
+}
+
+.peca img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  filter: contrast(1.04);
+}
+
+.peca figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-height: 6rem;
+  padding: 1.5rem 1rem;
+  color: #68606b;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
